@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libMujs", "libMujs\libMujs.vcxproj", "{8B00A52C-64EB-48E9-A95E-F2E674777D22}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example", "example\example.vcxproj", "{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22} = {8B00A52C-64EB-48E9-A95E-F2E674777D22}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugForXP|Win32 = DebugForXP|Win32
+		Release|Win32 = Release|Win32
+		ReleaseForXp|Win32 = ReleaseForXp|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22}.Debug|Win32.Build.0 = Debug|Win32
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22}.DebugForXP|Win32.ActiveCfg = DebugForXP|Win32
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22}.DebugForXP|Win32.Build.0 = DebugForXP|Win32
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22}.Release|Win32.ActiveCfg = Release|Win32
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22}.Release|Win32.Build.0 = Release|Win32
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22}.ReleaseForXp|Win32.ActiveCfg = ReleaseForXp|Win32
+		{8B00A52C-64EB-48E9-A95E-F2E674777D22}.ReleaseForXp|Win32.Build.0 = ReleaseForXp|Win32
+		{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}.Debug|Win32.Build.0 = Debug|Win32
+		{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}.DebugForXP|Win32.ActiveCfg = Debug|Win32
+		{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}.DebugForXP|Win32.Build.0 = Debug|Win32
+		{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}.Release|Win32.ActiveCfg = Release|Win32
+		{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}.Release|Win32.Build.0 = Release|Win32
+		{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}.ReleaseForXp|Win32.ActiveCfg = Release|Win32
+		{DBA65BDE-4DD6-474F-97FB-A675BD0E4DC3}.ReleaseForXp|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

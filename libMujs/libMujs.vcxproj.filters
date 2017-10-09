@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="mujs">
+      <UniqueIdentifier>{61e10dbd-6dfb-4382-b1a3-bce282407f87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libMujs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsarray.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsboolean.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsbuiltin.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jscompile.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsdate.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsdtoa.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsdump.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jserror.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsfunction.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsgc.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsintern.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jslex.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsmath.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsnumber.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsobject.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\json.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsparse.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsproperty.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsregexp.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsrun.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsstate.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsstring.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\jsvalue.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\main.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\regexp.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\utf.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="mujs\utftype.c">
+      <Filter>mujs</Filter>
+    </ClCompile>
+    <ClCompile Include="tools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libMujs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\astnames.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\jsbuiltin.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\jscompile.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\jsi.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\jslex.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\jsparse.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\jsrun.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\jsvalue.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\mujs.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\opnames.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\regexp.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+    <ClInclude Include="mujs\utf.h">
+      <Filter>mujs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
