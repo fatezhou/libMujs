@@ -9,7 +9,9 @@ typedef std::string(*pCallCFunctionFromJs)(const std::string& strFunctionName, c
 
 void mujs_init(std::string strJsFile = "");
 bool mujs_bind_c_function(const std::string& strFunctionName, pCallCFunctionFromJs ptr, int nParamCount);
+
 bool mujs_evalute_js(const std::string& strScript, bool bWaitForFinish = true);
+bool mujs_run_js_file(const std::string& strFilePath, bool bWaitForFinish = true);
 bool mujs_call_js_function(const std::string& strFunctionName, const std::vector<std::string>& vecParam, OUT_PARAM std::string& strReturn);
 std::string mujs_show_builtin_function();
 #endif

@@ -279,7 +279,7 @@ bool mujs_bind_c_function(const std::string& strFunctionName, pCallCFunctionFrom
 		return false;
 	}
 	else{
-		g_bindFuncMap.insert(std::make_pair(strFunctionName, BindFunctionInfo{ptr, nParamCount}));
+		g_bindFuncMap.insert(std::make_pair(strFunctionName, BindFunctionInfo{ptr, nParamCount + 1}));
 		return true;
 	}
 }
@@ -336,4 +336,10 @@ std::string mujs_show_builtin_function()
 		"";
 	printf("%s", strFunctions.c_str());
 	return strFunctions;
+}
+
+bool mujs_run_js_file(const std::string& strFilePath, bool bWaitForFinish /*= true*/)
+{
+	const std::string strJavascript = GetDataFromFile(strFilePath.c_str());
+	return mujs_evalute_js(strJavascript, bWaitForFinish);
 }
