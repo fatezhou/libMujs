@@ -193,6 +193,12 @@ void set_interval(js_State* jss, bool bOnce){
 	}
 }
 
+void mujs_alert(js_State* jss){
+	std::string strText = js_tostring(jss, 1);
+	MessageBoxA(NULL, strText.c_str(), "Message", 0);
+	js_pushundefined(jss);
+}
+
 void mujs_setTimeout(js_State* jss){
 #ifdef 立马回调
 	std::string strFunction;	
@@ -263,6 +269,7 @@ void mujs_init(std::string strJsFile)
 	BIND_FUNC(setInterval, 2);
 	BIND_FUNC(clearInterval, 1);
 	BIND_FUNC(clearTimeout, 1);
+	BIND_FUNC(alert, 1);
 	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)MessageLoop, 0, 0, &Neko::g_thread_id);
 
 	if (strJsFile.empty() == false){
@@ -332,6 +339,7 @@ std::string mujs_show_builtin_function()
 		"	clearInterval(id);\n"
 		"	print(xxx);\n"
 		"	require(xxx);\n"
+		"   CallbackRouter(\"functionName\", ...);\n"
 		"}\n\n\n"
 		"";
 	printf("%s", strFunctions.c_str());

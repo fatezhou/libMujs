@@ -11,12 +11,11 @@ int main(){
 	mujs_init();
 	mujs_bind_c_function("hello", my_callback, 2);
 	mujs_evalute_js("function add(str){print('Hello '+str);return 'Hello ' + str;};");
-	mujs_evalute_js("clearTimeout(setTimeout(\'function(){print(123456);return 10;}\', 1000));");
+	mujs_evalute_js("clearTimeout(setTimeout(\'function(){print(123456);return 10;}\', 1000));alert(112233);");
 	mujs_evalute_js("print(CallbackRouter('hello',1234, 4444));");
 	std::vector<std::string> vec;
 	vec.push_back("Mujs");
 	std::string strRes;
 	mujs_call_js_function("add", vec, strRes);
-
 	WaitForSingleObject(CreateEvent(NULL, false, false, NULL), INFINITE);
 }
